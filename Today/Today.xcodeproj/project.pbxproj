@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C62CC9A2BF759450002882A /* Date+Today.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C62CC992BF759450002882A /* Date+Today.swift */; };
 		2CFA28382BF6023D001AF328 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFA28372BF6023D001AF328 /* AppDelegate.swift */; };
 		2CFA283A2BF6023D001AF328 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFA28392BF6023D001AF328 /* SceneDelegate.swift */; };
 		2CFA283C2BF6023D001AF328 /* ReminderListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFA283B2BF6023D001AF328 /* ReminderListViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C62CC992BF759450002882A /* Date+Today.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Today.swift"; sourceTree = "<group>"; };
 		2CFA28342BF6023D001AF328 /* Today.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Today.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CFA28372BF6023D001AF328 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CFA28392BF6023D001AF328 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				2CFA284C2BF60D08001AF328 /* Reminder.swift */,
+				2C62CC992BF759450002882A /* Date+Today.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CFA283C2BF6023D001AF328 /* ReminderListViewController.swift in Sources */,
+				2C62CC9A2BF759450002882A /* Date+Today.swift in Sources */,
 				2CFA28382BF6023D001AF328 /* AppDelegate.swift in Sources */,
 				2CFA283A2BF6023D001AF328 /* SceneDelegate.swift in Sources */,
 				2CFA284D2BF60D08001AF328 /* Reminder.swift in Sources */,
