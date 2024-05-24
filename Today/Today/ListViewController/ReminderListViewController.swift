@@ -35,11 +35,8 @@ class ReminderListViewController: UICollectionViewController {
             return collectionView.dequeueConfiguredReusableCell(using: cellRegistration, for: indexPath, item: itemIdentifier)
         }
         
-        //Snapshot используется для создания снимка данных, который затем применяется к dataSource для отображения информации в коллекции
-        var snapshot = Snapshot()
-        snapshot.appendSections([0])
-        snapshot.appendItems(reminders.map { $0.id })
-        dataSource.apply(snapshot)
+        // обновляем интерфейс 
+        updateSnapshot()
         
         //collectionView.dataSource присваивается dataSource для определения источника данных коллекции
         collectionView.dataSource = dataSource
