@@ -41,6 +41,18 @@ class ReminderListViewController: UICollectionViewController {
         //collectionView.dataSource присваивается dataSource для определения источника данных коллекции
         collectionView.dataSource = dataSource
     }
+    
+    override func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
+        let id = reminders[indexPath.item].id
+        pushDetailViewForReminder(withId: id)
+        return false
+    }
+    
+    func pushDetailViewForReminder(withId id: Reminder.ID) {
+        let reminder = reminder(withId: id)
+        let viewController = ReminderViewController(reminder: reminder)
+        navigationController?.pushViewController(viewController, animated: true)
+    }
 
     // Приватный метод listLayout() используется для создания и настройки композиционного макета коллекции
     private func listLayout() -> UICollectionViewCompositionalLayout {
